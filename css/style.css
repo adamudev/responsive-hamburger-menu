@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Redressed&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  background-color: #984e82;
+}
+
+.navbar {
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-hamburger h3 {
+  font-family: "Redressed", cursive;
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.toggle-icon {
+  font-size: 30px;
+  background-color: #fff;
+  color: #984e82;
+  border: none;
+  cursor: pointer;
+  transition: 500ms ease-in;
+}
+
+.toggle-icon:hover {
+  color: #2d2d2d;
+  transform: rotate(360deg);
+}
+
+.menu-hamburger {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: 500ms ease-in-out;
+}
+
+.link-items {
+  padding: 70px 100px;
+}
+
+.link-items a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  overflow: hidden;
+  transition: 500ms ease-in-out;
+}
+
+.link-items li:first-child {
+  border-top: 1px solid #fff;
+}
+
+.link-items a:hover {
+  background-color: #2d2d2d;
+  color: #aaa;
+  padding-left: 30px;
+}
+
+.display-links {
+  height: 70vh;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .logo-hamburger {
+    padding: 0;
+  }
+
+  .toggle-icon {
+    display: none;
+  }
+
+  .menu-hamburger {
+    height: auto;
+  }
+
+  .link-items {
+    display: flex;
+    padding: 8px 16px;
+  }
+
+  .link-items li:first-child {
+    border-top: none;
+  }
+
+  .link-items a {
+    border-bottom: none;
+    border-left: none;
+    padding: 0;
+    margin: 0 8px;
+  }
+
+  .link-items a:hover {
+    padding: 0;
+  }
+}
